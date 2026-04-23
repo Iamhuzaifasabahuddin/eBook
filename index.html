@@ -1,116 +1,969 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Your site description here">
-    <meta name="author" content="Your Name Here">
-    <meta name="date" content="2026-04-23" />
-    <meta name="twitter:image:alt" content="Sample alt text for image">
-    <meta name="og:image:alt" content="Sample alt text for Open Graph image">
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Your Organization Name",
-            "url": "https://www.example.com",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://www.example.com/logo.png"
-            }
-        }
-    </script>
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Local Business Name",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "123 Main St",
-                "addressLocality": "City",
-                "addressRegion": "State",
-                "postalCode": "12345",
-                "addressCountry": "Country"
-            }
-        }
-    </script>
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-                {
-                    "@type": "Question",
-                    "name": "What is FAQ?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "FAQ stands for Frequently Asked Questions."
-                    }
-                }
-            ]
-        }
-    </script>
-    <link rel="stylesheet" href="styles.css">
-    <title>Your Website Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ═══════════════════════════════════════════════
+  PRIMARY SEO META TAGS
+  - Title follows "Primary Keyword | Brand" pattern, front-loaded
+  - Description is 150–160 chars, includes CTA and primary keywords
+═══════════════════════════════════════════════ -->
+<title>eBook Publishing Services | Editing, Formatting & Cover Design — Inkraft</title>
+<meta name="description" content="Inkraft provides professional eBook editing, interior formatting, cover design, and Amazon KDP publishing. 2,400+ authors published. Get a free quote in 24 hours.">
+<meta name="keywords" content="ebook publishing services, ebook editing service, ebook formatting service, ebook cover design, Amazon KDP publishing service, self publishing services, manuscript editing, epub formatting, book distribution, professional ebook services, KDP formatting, indie author publishing, self-published book services">
+<meta name="author" content="Inkraft Publishing Services">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="theme-color" content="#0D0D0D">
+<link rel="canonical" href="https://inkraft.co/">
+
+<!-- ═══════════════════════════════════════════════
+  OPEN GRAPH (Facebook, LinkedIn, etc.)
+═══════════════════════════════════════════════ -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://inkraft.co/">
+<meta property="og:title" content="eBook Publishing Services — Inkraft | Editing, Formatting & Global Distribution">
+<meta property="og:description" content="From raw manuscript to published bestseller. Professional eBook editing, formatting, cover design, and distribution to Amazon KDP, Apple Books, Kobo & 15 more platforms. 2,400+ authors published.">
+<meta property="og:image" content="https://inkraft.co/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Inkraft eBook Publishing Services — Professional editing, formatting and cover design">
+<meta property="og:site_name" content="Inkraft Publishing Services">
+<meta property="og:locale" content="en_US">
+
+<!-- ═══════════════════════════════════════════════
+  TWITTER / X CARD
+═══════════════════════════════════════════════ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@inkraftco">
+<meta name="twitter:creator" content="@inkraftco">
+<meta name="twitter:title" content="Inkraft — Professional eBook Publishing, Editing & Formatting">
+<meta name="twitter:description" content="Professional eBook editing, formatting, cover design & global distribution. 2,400+ authors published. 4.9★ rated. Get a free quote.">
+<meta name="twitter:image" content="https://inkraft.co/og-image.jpg">
+<meta name="twitter:image:alt" content="Inkraft eBook publishing services">
+
+<!-- ═══════════════════════════════════════════════
+  ADDITIONAL CRAWL HINTS
+═══════════════════════════════════════════════ -->
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large">
+<link rel="alternate" hreflang="en" href="https://inkraft.co/">
+<link rel="alternate" hreflang="x-default" href="https://inkraft.co/">
+
+<!-- ═══════════════════════════════════════════════
+  SCHEMA.ORG STRUCTURED DATA — MULTI-TYPE
+  Types used:
+    1. ProfessionalService  – primary entity with address, phone, hours, geo
+    2. FAQPage              – boosts FAQ rich snippets in SERP
+    3. BreadcrumbList       – helps Google understand site structure
+    4. WebSite + SearchAction – enables sitelinks search box
+    5. ItemList (services)  – can generate carousel rich results
+═══════════════════════════════════════════════ -->
+
+<!-- 1. ProfessionalService -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "@id": "https://inkraft.co/#organization",
+  "name": "Inkraft Publishing Services",
+  "alternateName": "Inkraft",
+  "description": "End-to-end eBook publishing services including professional manuscript editing, interior formatting (EPUB/MOBI/PDF), custom cover design, global distribution to 18+ platforms, and launch marketing for independent authors and publishers.",
+  "url": "https://inkraft.co",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://inkraft.co/logo.png",
+    "width": 200,
+    "height": 60
+  },
+  "image": "https://inkraft.co/og-image.jpg",
+  "telephone": "+1-800-INKRAFT",
+  "email": "hello@inkraft.co",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 37.7749,
+    "longitude": -122.4194
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  ],
+  "priceRange": "$$",
+  "currenciesAccepted": "USD",
+  "paymentAccepted": "Credit Card, PayPal, Bank Transfer",
+  "serviceType": [
+    "eBook Publishing",
+    "Manuscript Editing",
+    "eBook Formatting",
+    "Book Cover Design",
+    "Book Distribution",
+    "Translation Services",
+    "Launch Marketing"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "eBook Publishing Packages",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "name": "Starter Package",
+        "price": "299",
+        "priceCurrency": "USD",
+        "description": "Copy editing, EPUB+MOBI formatting, basic cover design, Amazon KDP publishing, metadata & keyword setup."
+      },
+      {
+        "@type": "Offer",
+        "name": "Professional Package",
+        "price": "799",
+        "priceCurrency": "USD",
+        "description": "Full developmental & copy editing, EPUB 3 + MOBI + print PDF, custom cover design (3 concepts), 18+ platform distribution, optimised metadata, launch marketing kit, unlimited revisions, ISBN procurement."
+      },
+      {
+        "@type": "Offer",
+        "name": "Enterprise Package",
+        "description": "Custom quote. Everything in Professional plus translation (30+ languages), series branding, dedicated account manager, priority 48h turnaround, volume discounts."
+      }
+    ]
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "847",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Rachel H." },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "The editing team completely transformed my manuscript without losing my voice. My book hit the Top 100 in its category within the first week.",
+      "name": "Transformed my manuscript"
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Michael O." },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "I'd struggled for months trying to format my illustrated children's book myself. Inkraft had a perfect EPUB ready in three days. Absolutely magic.",
+      "name": "Perfect EPUB in three days"
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Sandra P." },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "The cover they designed is stunning. Sales doubled compared to my previous self-published book with a DIY cover.",
+      "name": "Sales doubled with professional cover"
+    }
+  ],
+  "sameAs": [
+    "https://twitter.com/inkraftco",
+    "https://www.facebook.com/inkraftco",
+    "https://www.linkedin.com/company/inkraft"
+  ]
+}
+</script>
+
+<!-- 2. FAQPage — enables FAQ rich snippets -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long does a full eBook publishing package take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most Professional packages are completed in 3–5 weeks, depending on manuscript length and revision rounds. Starter packages typically take 7–10 business days. We also offer a 48-hour priority service for urgent projects at an additional fee."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I retain full copyright and royalties after publishing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. You retain 100% of your copyright and all royalties. We are a services company — we never take a percentage of sales or any ongoing rights. You own everything we produce for you, including cover art and formatted files."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What manuscript file formats do you accept?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We accept .docx (Microsoft Word), .pages, .rtf, .odt, and Google Docs (shared link). Most authors submit in Word format. If you have a specific format, contact us and we'll advise the best way to submit."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I publish exclusively on Amazon KDP (Kindle Unlimited)?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We support KDP Select (Kindle Unlimited exclusive) and wide distribution to 18+ platforms. We'll advise on the pros and cons of each strategy for your genre before you decide — the choice is always yours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I'm not happy with the editing or cover design?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All packages include at least one full revision round, and the Professional package includes unlimited revisions until you are satisfied. In the unlikely event you're not happy after revisions, we offer a full refund on that service — no questions asked."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you publish non-fiction, business books, or academic texts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — we work across all genres and formats including business, self-help, memoir, cookbooks, children's books, academic texts, and more. Complex layouts, charts, and illustrations are handled by our specialist formatting team."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does eBook publishing cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our Starter package begins at $299 (one-time) for copy editing, EPUB/MOBI formatting, basic cover design, and Amazon KDP publishing. The Professional package is $799 and includes full editing, custom cover design with 3 concepts, 18+ platform distribution, and a launch marketing kit. Enterprise pricing is custom — contact us for a quote."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which eBook stores do you distribute to?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We distribute to 18+ global platforms including Amazon KDP, Apple Books, Kobo, Barnes & Noble, Google Play Books, Scribd, Smashwords, and Draft2Digital. We handle all submissions, metadata, and pricing configuration."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- 3. WebSite + SearchAction -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://inkraft.co/#website",
+  "url": "https://inkraft.co",
+  "name": "Inkraft Publishing Services",
+  "description": "Professional eBook publishing, editing, formatting, and global distribution services.",
+  "publisher": { "@id": "https://inkraft.co/#organization" },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://inkraft.co/search?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<!-- 4. BreadcrumbList -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://inkraft.co/" },
+    { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://inkraft.co/#services" },
+    { "@type": "ListItem", "position": 3, "name": "Pricing", "item": "https://inkraft.co/#pricing" }
+  ]
+}
+</script>
+
+<!-- 5. ItemList — Service offerings for carousel potential -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Inkraft eBook Publishing Services",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Service",
+        "name": "Manuscript Editing",
+        "description": "Developmental, line, and copy editing by experienced editors. Includes track-changes feedback and style report.",
+        "provider": { "@id": "https://inkraft.co/#organization" },
+        "url": "https://inkraft.co/#services"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Service",
+        "name": "eBook Interior Formatting",
+        "description": "EPUB 3, MOBI, and print-ready PDF formatting. Retailer compliance guaranteed on first submission.",
+        "provider": { "@id": "https://inkraft.co/#organization" },
+        "url": "https://inkraft.co/#services"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Service",
+        "name": "eBook Cover Design",
+        "description": "Custom genre-targeted cover design. 3 concepts, unlimited revisions, all platform file sizes included.",
+        "provider": { "@id": "https://inkraft.co/#organization" },
+        "url": "https://inkraft.co/#services"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Service",
+        "name": "eBook Publishing & Distribution",
+        "description": "Submission, metadata, pricing, and category placement across 18+ global eBook retailers.",
+        "provider": { "@id": "https://inkraft.co/#organization" },
+        "url": "https://inkraft.co/#services"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Service",
+        "name": "Book Launch Marketing",
+        "description": "ARC distribution, Amazon A+ content, social media assets, and coordinated launch strategy.",
+        "provider": { "@id": "https://inkraft.co/#organization" },
+        "url": "https://inkraft.co/#services"
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+        "@type": "Service",
+        "name": "Book Translation Services",
+        "description": "Human translation into 30+ languages by genre-specialist translators, formatting included.",
+        "provider": { "@id": "https://inkraft.co/#organization" },
+        "url": "https://inkraft.co/#services"
+      }
+    }
+  ]
+}
+</script>
+
+<script src="static/script.js" defer></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="static/style.css">
+
+<!-- Preload LCP hero image if one exists -->
+<!-- <link rel="preload" as="image" href="/hero-bg.webp"> -->
 </head>
 <body>
-    <header>
-        <h1>Your Website Heading</h1>
-    </header>
-    <nav>
-        <ol itemscope itemtype="https://schema.org/BreadcrumbList">
-            <li itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
-                <a href="/" itemprop="item">
-                    <span itemprop="name">Home</span>
-                </a>
-                <meta itemprop="position" content="1" />
-            </li>
-            <li itemscope itemprop="itemListElement" itemtype="https://schema.org/ListItem">
-                <a href="/about" itemprop="item">
-                    <span itemprop="name">About</span>
-                </a>
-                <meta itemprop="position" content="2" />
-            </li>
-        </ol>
-    </nav>
-    <main>
-        <section>
-            <h2>Services</h2>
-            <div>
-                <h3 itemprop="name">Service Name</h3>
-                <img src="service-icon.svg" alt="Service Icon" />
-            </div>
-        </section>
-        <section>
-            <h2>Testimonials</h2>
-            <div itemscope itemtype="https://schema.org/Review">
-                <span itemprop="author">John Doe</span>
-                <span itemprop="reviewBody">Great service!</span>
-            </div>
-        </section>
-        <section>
-            <h2>Pricing</h2>
-            <script type="application/ld+json">
-                {
-                    "@context": "https://schema.org",
-                    "@type": "Service",
-                    "serviceType": "Your Service",
-                    "offers": {
-                        "@type": "Offer",
-                        "price": "100",
-                        "priceCurrency": "USD"
-                    }
-                }
-            </script>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Your Company</p>
-    </footer>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- NAV -->
+<nav id="main-nav" aria-label="Main navigation">
+  <div class="nav-logo">ink<span>raft</span></div>
+  <ul class="nav-links">
+    <li><a class="animate-link" href="#services">Services</a></li>
+    <li><a class="animate-link" href="#process">Process</a></li>
+    <li><a class="animate-link" href="#platforms">Platforms</a></li>
+    <li><a class="animate-link" href="#pricing">Pricing</a></li>
+    <li><a class="animate-link" href="#faq">FAQ</a></li>
+  </ul>
+  <button class="nav-cta" onclick="document.getElementById('cta-section').scrollIntoView({behavior:'smooth'})">Get a quote</button>
+</nav>
+
+<!-- HERO -->
+<main>
+<section class="hero" aria-labelledby="hero-heading">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-lines" aria-hidden="true"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">End-to-end eBook services</div>
+    <h1 id="hero-heading">
+      Your manuscript.<br>
+      <em>Perfectly published.</em>
+    </h1>
+    <p class="hero-desc">Professional editing, formatting, cover design, and global publishing — everything an author needs to launch a book that looks as good as it reads.</p>
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">Explore services</button>
+      <button class="btn-outline" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">View pricing</button>
+    </div>
+  </div>
+  <div class="hero-visual" aria-hidden="true">
+    <div class="book-stack">
+      <div class="book-spine"></div>
+      <div class="book-spine"></div>
+      <div class="book-spine"></div>
+      <div class="book-front">
+        <div class="book-decoration"></div>
+        <div>
+          <div class="book-gold-rule"></div>
+          <div class="book-title-label">The Art of the Craft</div>
+          <div class="book-author-label">A. Writer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar" role="region" aria-label="Key statistics">
+  <div class="trust-item">
+    <div>
+      <div class="trust-num">2,400+</div>
+      <div class="trust-label">Authors published</div>
+    </div>
+  </div>
+  <div class="trust-divider" aria-hidden="true"></div>
+  <div class="trust-item">
+    <div>
+      <div class="trust-num">18</div>
+      <div class="trust-label">Store platforms</div>
+    </div>
+  </div>
+  <div class="trust-divider" aria-hidden="true"></div>
+  <div class="trust-item">
+    <div>
+      <div class="trust-num">4.9★</div>
+      <div class="trust-label">Average client rating</div>
+    </div>
+  </div>
+  <div class="trust-divider" aria-hidden="true"></div>
+  <div class="trust-item">
+    <div>
+      <div class="trust-num">72h</div>
+      <div class="trust-label">Average turnaround</div>
+    </div>
+  </div>
+  <div class="trust-divider" aria-hidden="true"></div>
+  <div class="trust-item">
+    <div>
+      <div class="trust-num">100%</div>
+      <div class="trust-label">Satisfaction guarantee</div>
+    </div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services-section" id="services" aria-labelledby="services-heading">
+  <div class="services-header reveal">
+    <div>
+      <div class="section-tag">What we do</div>
+      <h2 class="section-heading" id="services-heading">Every service your<br><em>book needs</em></h2>
+    </div>
+    <p class="services-intro">From first draft to bestseller rank — our specialist team handles every stage of the eBook lifecycle so you can focus on writing.</p>
+  </div>
+  <div class="services-grid">
+
+    <!-- 1 Editing -->
+    <article class="service-card reveal">
+      <div class="service-num">01</div>
+      <div class="service-icon">
+        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6 26l4-1 14-14-3-3L7 22l-1 4z" stroke="#C8963E" stroke-width="1.5" stroke-linejoin="round"/>
+          <path d="M21 8l3 3" stroke="#C8963E" stroke-width="1.5"/>
+          <path d="M6 26h20" stroke="rgba(245,240,232,0.2)" stroke-width="1.5"/>
+        </svg>
+      </div>
+      <h3 class="service-title">Manuscript Editing</h3>
+      <p class="service-desc">Developmental, line, and copy editing by experienced editors who understand your genre and preserve your voice throughout.</p>
+      <ul class="service-features">
+        <li>Developmental editing & story structure</li>
+        <li>Line editing & style refinement</li>
+        <li>Copy editing & proofreading</li>
+        <li>Track-changes with detailed feedback</li>
+      </ul>
+      <a class="service-link" href="#pricing">View packages →</a>
+    </article>
+
+    <!-- 2 Formatting -->
+    <article class="service-card reveal reveal-delay-1">
+      <div class="service-num">02</div>
+      <div class="service-icon">
+        <svg viewBox="0 0 32 32" fill="none">
+          <rect x="5" y="4" width="22" height="26" rx="1" stroke="#C8963E" stroke-width="1.5"/>
+          <path d="M10 10h12M10 15h12M10 20h8" stroke="rgba(245,240,232,0.35)" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h3 class="service-title">Interior Formatting</h3>
+      <p class="service-desc">Pixel-perfect EPUB, MOBI, and PDF formatting built to pass all major retailer validation checks on the first submission.</p>
+      <ul class="service-features">
+        <li>EPUB 3 & reflowable formatting</li>
+        <li>Fixed-layout & illustrated books</li>
+        <li>Print-ready PDF interior</li>
+        <li>Retailer compliance guaranteed</li>
+      </ul>
+      <a class="service-link" href="#pricing">View packages →</a>
+    </article>
+
+    <!-- 3 Cover Design -->
+    <article class="service-card reveal reveal-delay-2">
+      <div class="service-num">03</div>
+      <div class="service-icon">
+        <svg viewBox="0 0 32 32" fill="none">
+          <rect x="6" y="4" width="20" height="26" rx="1" stroke="#C8963E" stroke-width="1.5"/>
+          <path d="M6 4h3v26H6z" fill="rgba(200,150,62,0.15)"/>
+          <circle cx="19" cy="14" r="4" stroke="rgba(245,240,232,0.35)" stroke-width="1.5"/>
+          <path d="M10 24l4-4 3 3 3-5 4 6H10z" fill="rgba(200,150,62,0.2)" stroke="rgba(245,240,232,0.2)" stroke-width="1"/>
+        </svg>
+      </div>
+      <h3 class="service-title">Cover Design</h3>
+      <p class="service-desc">Genre-savvy covers that convert browsers into buyers — custom illustration, typography, and front/back/spine files included.</p>
+      <ul class="service-features">
+        <li>Custom illustrated or photo-composite</li>
+        <li>Front cover + full wrap + spine</li>
+        <li>3 concepts, unlimited revisions</li>
+        <li>All file sizes for every platform</li>
+      </ul>
+      <a class="service-link" href="#pricing">View packages →</a>
+    </article>
+
+    <!-- 4 Publishing -->
+    <article class="service-card reveal">
+      <div class="service-num">04</div>
+      <div class="service-icon">
+        <svg viewBox="0 0 32 32" fill="none">
+          <path d="M16 4v16M10 14l6 6 6-6" stroke="#C8963E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M6 22v4h20v-4" stroke="rgba(245,240,232,0.35)" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h3 class="service-title">Publishing & Distribution</h3>
+      <p class="service-desc">We handle every submission — account setup, metadata, pricing, and category placement across 18+ global retailers.</p>
+      <ul class="service-features">
+        <li>Amazon KDP, Apple Books, Kobo & more</li>
+        <li>ISBN procurement & registration</li>
+        <li>Metadata & keyword optimisation</li>
+        <li>Price & category strategy</li>
+      </ul>
+      <a class="service-link" href="#pricing">View packages →</a>
+    </article>
+
+    <!-- 5 Marketing -->
+    <article class="service-card reveal reveal-delay-1">
+      <div class="service-num">05</div>
+      <div class="service-icon">
+        <svg viewBox="0 0 32 32" fill="none">
+          <path d="M4 20l7-7 5 5 7-8 5 4" stroke="#C8963E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="28" cy="8" r="3" stroke="rgba(245,240,232,0.35)" stroke-width="1.5"/>
+        </svg>
+      </div>
+      <h3 class="service-title">Launch Marketing</h3>
+      <p class="service-desc">Strategic launch plans, ARC distribution, Amazon A+ content, and promotional graphics to maximise launch-week momentum.</p>
+      <ul class="service-features">
+        <li>Amazon A+ content creation</li>
+        <li>ARC reader outreach</li>
+        <li>Social media assets & banners</li>
+        <li>Launch checklist & timeline</li>
+      </ul>
+      <a class="service-link" href="#pricing">View packages →</a>
+    </article>
+
+    <!-- 6 Translation -->
+    <article class="service-card reveal reveal-delay-2">
+      <div class="service-num">06</div>
+      <div class="service-icon">
+        <svg viewBox="0 0 32 32" fill="none">
+          <circle cx="16" cy="16" r="11" stroke="#C8963E" stroke-width="1.5"/>
+          <path d="M16 5c-4 4-4 18 0 22M16 5c4 4 4 18 0 22" stroke="rgba(245,240,232,0.3)" stroke-width="1.2"/>
+          <path d="M5 16h22" stroke="rgba(245,240,232,0.3)" stroke-width="1.2"/>
+        </svg>
+      </div>
+      <h3 class="service-title">Translation Services</h3>
+      <p class="service-desc">Human-translated editions in 30+ languages, with genre-specialist translators who capture tone, not just words.</p>
+      <ul class="service-features">
+        <li>30+ languages available</li>
+        <li>Genre-specialist translators</li>
+        <li>Formatting included in all editions</li>
+        <li>Simultaneous multilingual launch</li>
+      </ul>
+      <a class="service-link" href="#pricing">View packages →</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process-section" id="process" aria-labelledby="process-heading">
+  <div class="reveal">
+    <div class="section-tag">How it works</div>
+    <h2 class="section-heading" id="process-heading">From rough draft<br><em>to retail shelf</em></h2>
+  </div>
+  <div class="process-layout">
+    <div class="process-sticky reveal">
+      <p class="process-aside-text">Our proven six-step process has taken over 2,400 manuscripts from raw files to published books — on every major platform, in every genre.</p>
+      <br>
+      <button class="btn-primary" onclick="document.getElementById('cta-section').scrollIntoView({behavior:'smooth'})">Start your project</button>
+    </div>
+    <div class="process-steps" role="list">
+      <div class="process-step reveal" role="listitem">
+        <div class="step-index">01</div>
+        <div class="step-content">
+          <h3>Discovery call</h3>
+          <p>We review your manuscript, understand your genre, audience, and goals — then build a tailored project plan with clear timelines and deliverables.</p>
+          <div class="step-tags"><span class="step-tag">Free</span><span class="step-tag">30 min</span><span class="step-tag">No obligation</span></div>
+        </div>
+      </div>
+      <div class="process-step reveal" role="listitem">
+        <div class="step-index">02</div>
+        <div class="step-content">
+          <h3>Editing round</h3>
+          <p>Your assigned editor works through developmental structure, line-level prose, and final copy — returning a tracked manuscript with a style report.</p>
+          <div class="step-tags"><span class="step-tag">Track changes</span><span class="step-tag">Style report</span></div>
+        </div>
+      </div>
+      <div class="process-step reveal" role="listitem">
+        <div class="step-index">03</div>
+        <div class="step-content">
+          <h3>Interior formatting</h3>
+          <p>Our formatters build your EPUB, MOBI, and print PDF with custom typography, chapter headers, and front matter — validated against every store's spec.</p>
+          <div class="step-tags"><span class="step-tag">EPUB 3</span><span class="step-tag">MOBI</span><span class="step-tag">PDF</span></div>
+        </div>
+      </div>
+      <div class="process-step reveal" role="listitem">
+        <div class="step-index">04</div>
+        <div class="step-content">
+          <h3>Cover design</h3>
+          <p>Three distinct cover concepts delivered within 5 business days. You choose a direction, we refine until it's perfect — as many revisions as needed.</p>
+          <div class="step-tags"><span class="step-tag">3 concepts</span><span class="step-tag">Unlimited revisions</span></div>
+        </div>
+      </div>
+      <div class="process-step reveal" role="listitem">
+        <div class="step-index">05</div>
+        <div class="step-content">
+          <h3>Publishing & metadata</h3>
+          <p>We craft optimised titles, subtitles, blurbs, and keyword sets — then upload and configure your book across all chosen retail platforms.</p>
+          <div class="step-tags"><span class="step-tag">SEO keywords</span><span class="step-tag">18+ retailers</span></div>
+        </div>
+      </div>
+      <div class="process-step reveal" role="listitem">
+        <div class="step-index">06</div>
+        <div class="step-content">
+          <h3>Launch & beyond</h3>
+          <p>A coordinated launch plan, ARC outreach, and post-launch marketing assets — plus royalty tracking setup so you can measure success from day one.</p>
+          <div class="step-tags"><span class="step-tag">Launch plan</span><span class="step-tag">ARC outreach</span><span class="step-tag">Royalty tracking</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PLATFORMS -->
+<section class="platforms-section" id="platforms" aria-labelledby="platforms-heading">
+  <div class="platforms-heading-row reveal">
+    <div>
+      <div class="section-tag">Distribution</div>
+      <h2 class="section-heading" id="platforms-heading">Published on every<br><em>major platform</em></h2>
+    </div>
+    <p class="platforms-sub">We manage submissions, metadata, and pricing on all 18 platforms — so your book is available wherever readers shop.</p>
+  </div>
+  <div class="platforms-grid reveal">
+    <div class="platform-tile">
+      <div class="platform-icon">
+        <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="6" fill="#FF9900" opacity="0.15"/><path d="M20 10l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6z" fill="#FF9900"/></svg>
+      </div>
+      <div class="platform-logo">Amazon KDP</div>
+    </div>
+    <div class="platform-tile">
+      <div class="platform-icon">
+        <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="6" fill="#555"/><circle cx="20" cy="20" r="10" stroke="#aaa" stroke-width="2"/><path d="M16 16l8 8M24 16l-8 8" stroke="#aaa" stroke-width="2"/></svg>
+      </div>
+      <div class="platform-logo">Apple Books</div>
+    </div>
+    <div class="platform-tile">
+      <div class="platform-icon">
+        <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="6" fill="#D6001C" opacity="0.15"/><path d="M12 28V12l16 8-16 8z" fill="#D6001C" opacity="0.7"/></svg>
+      </div>
+      <div class="platform-logo">Kobo</div>
+    </div>
+    <div class="platform-tile">
+      <div class="platform-icon">
+        <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="6" fill="#0C7DBD" opacity="0.15"/><rect x="11" y="10" width="18" height="22" rx="2" stroke="#0C7DBD" stroke-width="1.5"/><path d="M15 16h10M15 21h10M15 26h7" stroke="#0C7DBD" stroke-width="1.5"/></svg>
+      </div>
+      <div class="platform-logo">Barnes & Noble</div>
+    </div>
+    <div class="platform-tile">
+      <div class="platform-icon">
+        <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="6" fill="#00A3A3" opacity="0.15"/><circle cx="20" cy="20" r="9" stroke="#00A3A3" stroke-width="1.5"/><path d="M20 13v7l5 3" stroke="#00A3A3" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </div>
+      <div class="platform-logo">Google Play Books</div>
+    </div>
+    <div class="platform-tile">
+      <div class="platform-icon">
+        <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="6" fill="#8B1A1A" opacity="0.15"/><path d="M13 12h14v18H13z" stroke="#8B1A1A" stroke-width="1.5"/><path d="M13 16h14" stroke="#8B1A1A" stroke-width="1"/></svg>
+      </div>
+      <div class="platform-logo">Scribd</div>
+    </div>
+    <div class="platform-tile">
+      <div class="platform-icon">
+        <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="6" fill="#6441A5" opacity="0.15"/><path d="M14 14h12v12H14zM20 26v4" stroke="#6441A5" stroke-width="1.5"/><path d="M16 30h8" stroke="#6441A5" stroke-width="1.5"/></svg>
+      </div>
+      <div class="platform-logo">Smashwords</div>
+    </div>
+    <div class="platform-tile">
+      <div class="platform-icon">
+        <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="6" fill="#2E7D32" opacity="0.15"/><path d="M20 12c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8" stroke="#2E7D32" stroke-width="1.5" stroke-linecap="round"/><path d="M24 12l4 4-4 4" stroke="#2E7D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+      <div class="platform-logo">Draft2Digital</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing-section" id="pricing" aria-labelledby="pricing-heading">
+  <div class="pricing-intro-row reveal">
+    <div>
+      <div class="section-tag">Packages</div>
+      <h2 class="section-heading" id="pricing-heading">Simple, transparent<br><em>pricing</em></h2>
+    </div>
+    <p style="font-size:14px; color:var(--muted); max-width:320px; line-height:1.7;">All packages include a revision round and a dedicated project manager. Custom quotes available for longer manuscripts.</p>
+  </div>
+  <div class="pricing-grid reveal">
+
+    <div class="pricing-card">
+      <div class="pricing-tier">Starter</div>
+      <div class="pricing-price">$299</div>
+      <div class="pricing-from">one-time</div>
+      <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:1rem;">Perfect for authors who have a polished draft and need professional formatting and publishing.</p>
+      <div class="pricing-divider"></div>
+      <ul class="pricing-features">
+        <li><span class="check-icon">✓</span> Copy editing (up to 50k words)</li>
+        <li><span class="check-icon">✓</span> EPUB + MOBI formatting</li>
+        <li><span class="check-icon">✓</span> Basic cover design (template)</li>
+        <li><span class="check-icon">✓</span> Amazon KDP publishing</li>
+        <li><span class="check-icon">✓</span> Metadata & keyword setup</li>
+        <li><span class="check-icon">✓</span> 1 revision round</li>
+      </ul>
+      <button class="pricing-btn pricing-btn-dark">Get started</button>
+    </div>
+
+    <div class="pricing-card featured">
+      <div class="pricing-badge">Most popular</div>
+      <div class="pricing-tier">Professional</div>
+      <div class="pricing-price">$799</div>
+      <div class="pricing-from">one-time</div>
+      <p style="font-size:13px;color:rgba(245,240,232,0.6);line-height:1.6;margin-bottom:1rem;">The complete package for authors serious about a professional launch on all major platforms.</p>
+      <div class="pricing-divider"></div>
+      <ul class="pricing-features">
+        <li><span class="check-icon">✓</span> Full developmental + copy edit</li>
+        <li><span class="check-icon">✓</span> EPUB 3 + MOBI + print PDF</li>
+        <li><span class="check-icon">✓</span> Custom cover design (3 concepts)</li>
+        <li><span class="check-icon">✓</span> 18+ platform distribution</li>
+        <li><span class="check-icon">✓</span> Optimised metadata & blurb</li>
+        <li><span class="check-icon">✓</span> Launch marketing kit</li>
+        <li><span class="check-icon">✓</span> Unlimited revisions</li>
+        <li><span class="check-icon">✓</span> ISBN procurement</li>
+      </ul>
+      <button class="pricing-btn pricing-btn-light">Get started</button>
+    </div>
+
+    <div class="pricing-card">
+      <div class="pricing-tier">Enterprise</div>
+      <div class="pricing-price">Custom</div>
+      <div class="pricing-from">tailored quote</div>
+      <p style="font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:1rem;">For publishers, series authors, and organisations with high-volume or multilingual requirements.</p>
+      <div class="pricing-divider"></div>
+      <ul class="pricing-features">
+        <li><span class="check-icon">✓</span> Everything in Professional</li>
+        <li><span class="check-icon">✓</span> Translation (30+ languages)</li>
+        <li><span class="check-icon">✓</span> Series branding & style guide</li>
+        <li><span class="check-icon">✓</span> Dedicated account manager</li>
+        <li><span class="check-icon">✓</span> Priority 48h turnaround</li>
+        <li><span class="check-icon">✓</span> Volume discounts</li>
+      </ul>
+      <button class="pricing-btn pricing-btn-dark">Contact us</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials-section" aria-labelledby="testimonials-heading">
+  <div class="testimonials-header-row reveal">
+    <div>
+      <div class="section-tag">Client stories</div>
+      <h2 class="section-heading" id="testimonials-heading">Authors who trusted<br><em>Inkraft</em></h2>
+    </div>
+  </div>
+  <div class="testimonials-grid reveal">
+    <article class="testimonial-card">
+      <div class="t-stars">★★★★★</div>
+      <blockquote class="t-quote">"The editing team completely transformed my manuscript without losing my voice. My book hit the Top 100 in its category within the first week."</blockquote>
+      <div class="t-author-row">
+        <div class="t-avatar" style="background:#EEEDFE;color:#534AB7;">RH</div>
+        <div><div class="t-name">Rachel H.</div><div class="t-role">Thriller author</div></div>
+      </div>
+      <div class="t-genre">Psychological Thriller</div>
+    </article>
+    <article class="testimonial-card">
+      <div class="t-stars">★★★★★</div>
+      <blockquote class="t-quote">"I'd struggled for months trying to format my illustrated children's book myself. Inkraft had a perfect EPUB ready in three days. Absolutely magic."</blockquote>
+      <div class="t-author-row">
+        <div class="t-avatar" style="background:#E1F5EE;color:#0F6E56;">MO</div>
+        <div><div class="t-name">Michael O.</div><div class="t-role">Children's author</div></div>
+      </div>
+      <div class="t-genre">Children's Fiction</div>
+    </article>
+    <article class="testimonial-card">
+      <div class="t-stars">★★★★★</div>
+      <blockquote class="t-quote">"The cover they designed is stunning — I've had so many compliments. Sales doubled compared to my previous self-published book with a DIY cover."</blockquote>
+      <div class="t-author-row">
+        <div class="t-avatar" style="background:#FAECE7;color:#993C1D;">SP</div>
+        <div><div class="t-name">Sandra P.</div><div class="t-role">Romance author</div></div>
+      </div>
+      <div class="t-genre">Contemporary Romance</div>
+    </article>
+    <article class="testimonial-card">
+      <div class="t-stars">★★★★★</div>
+      <blockquote class="t-quote">"Publishing 12 books a year, I needed a reliable partner. Inkraft handles everything from edit to upload — I just write. Turnaround is always faster than promised."</blockquote>
+      <div class="t-author-row">
+        <div class="t-avatar" style="background:#E6F1FB;color:#185FA5;">DL</div>
+        <div><div class="t-name">David L.</div><div class="t-role">Series author, Fantasy</div></div>
+      </div>
+      <div class="t-genre">Epic Fantasy</div>
+    </article>
+    <article class="testimonial-card">
+      <div class="t-stars">★★★★★</div>
+      <blockquote class="t-quote">"My business book needed to look credible and professional. The formatting, cover, and launch support exceeded every expectation. Worth every penny."</blockquote>
+      <div class="t-author-row">
+        <div class="t-avatar" style="background:#EAF3DE;color:#3B6D11;">JN</div>
+        <div><div class="t-name">James N.</div><div class="t-role">Business author</div></div>
+      </div>
+      <div class="t-genre">Business & Finance</div>
+    </article>
+    <article class="testimonial-card">
+      <div class="t-stars">★★★★★</div>
+      <blockquote class="t-quote">"Getting my memoir translated into Spanish and Portuguese opened up a whole new readership. The translators were sensitive to the emotional weight of the story."</blockquote>
+      <div class="t-author-row">
+        <div class="t-avatar" style="background:#FBEAF0;color:#993556;">AL</div>
+        <div><div class="t-name">Ana L.</div><div class="t-role">Memoir author</div></div>
+      </div>
+      <div class="t-genre">Memoir & Biography</div>
+    </article>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq" aria-labelledby="faq-heading">
+  <div class="reveal">
+    <div class="section-tag">Common questions</div>
+    <h2 class="section-heading" id="faq-heading">Everything you <em>need to know</em></h2>
+  </div>
+  <div class="faq-layout">
+    <div class="faq-aside reveal">
+      <p class="faq-aside-text">Still have questions? Our team responds to all enquiries within 4 business hours.</p>
+      <br>
+      <button class="btn-outline" onclick="document.getElementById('cta-section').scrollIntoView({behavior:'smooth'})">Contact us</button>
+    </div>
+    <div class="faq-list" role="list">
+      <div class="faq-item reveal" role="listitem">
+        <div class="faq-q" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+          <span>How long does a full publishing package take?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">Most Professional packages are completed in 3–5 weeks, depending on manuscript length and revision rounds. Starter packages typically take 7–10 business days. We also offer a 48-hour priority service for urgent projects at an additional fee.</div>
+      </div>
+      <div class="faq-item reveal" role="listitem">
+        <div class="faq-q" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+          <span>Do I retain full copyright and royalties?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">Absolutely. You retain 100% of your copyright and all royalties. We are a services company — we never take a percentage of sales or any ongoing rights. You own everything we produce for you, including cover art and formatted files.</div>
+      </div>
+      <div class="faq-item reveal" role="listitem">
+        <div class="faq-q" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+          <span>What file formats do you accept for the manuscript?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">We accept .docx (Microsoft Word), .pages, .rtf, .odt, and Google Docs (shared link). Most authors submit in Word format. If you have a specific format, contact us and we'll advise the best way to submit.</div>
+      </div>
+      <div class="faq-item reveal" role="listitem">
+        <div class="faq-q" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+          <span>Can I publish exclusively on Amazon KDP?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">Yes. We support KDP Select (Kindle Unlimited exclusive) and wide distribution. We'll advise on the pros and cons of each strategy for your genre before you decide — the choice is always yours.</div>
+      </div>
+      <div class="faq-item reveal" role="listitem">
+        <div class="faq-q" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+          <span>What if I'm not happy with the editing or design?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">All packages include at least one full revision round, and Professional includes unlimited revisions until you are satisfied. In the unlikely event you're not happy after revisions, we offer a full refund on that service — no questions asked.</div>
+      </div>
+      <div class="faq-item reveal" role="listitem">
+        <div class="faq-q" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false">
+          <span>Do you work with non-fiction, business books, or academic texts?</span>
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">Yes — we work across all genres and formats including business, self-help, memoir, cookbooks, children's books, academic texts, and more. Complex layouts, charts, and illustrations are handled by our specialist formatting team.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="cta-section" aria-labelledby="cta-heading">
+  <div class="cta-bg" aria-hidden="true"></div>
+  <div style="position:relative;z-index:2;">
+    <div class="section-tag reveal" style="justify-content:center;">Ready to publish?</div>
+    <h2 class="section-heading reveal" id="cta-heading" style="text-align:center;">Start your publishing<br><em>journey today</em></h2>
+    <p class="cta-desc reveal">Send us your manuscript for a free sample edit and a no-obligation publishing quote — usually within 24 hours.</p>
+    <div class="cta-actions reveal">
+      <button class="btn-gold">Get a free quote</button>
+      <button class="btn-outline" style="color:var(--paper);border-color:rgba(245,240,232,0.25);">Browse services</button>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="nav-logo">ink<span style="color:var(--gold)">raft</span></span>
+      <p class="footer-tagline">Professional eBook publishing, editing, and formatting services for independent authors and publishers worldwide.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="#services">Manuscript editing</a>
+      <a href="#services">Interior formatting</a>
+      <a href="#services">Cover design</a>
+      <a href="#services">Publishing & distribution</a>
+      <a href="#services">Translation</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#">About us</a>
+      <a href="#">Our editors</a>
+      <a href="#">Case studies</a>
+      <a href="#">Blog</a>
+      <a href="#">Careers</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="#">Contact</a>
+      <a href="#faq">FAQ</a>
+      <a href="#">Submit manuscript</a>
+      <a href="#">Author portal</a>
+      <a href="#">Affiliate programme</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 Inkraft Publishing Services. All rights reserved.</span>
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
