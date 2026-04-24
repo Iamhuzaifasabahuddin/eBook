@@ -1,10 +1,48 @@
-// Sticky nav shadow
+// ── NAV SCROLL SOLID ──
 const nav = document.getElementById('main-nav');
 window.addEventListener('scroll', () => {
   nav.classList.toggle('solid', window.scrollY > 20);
 }, { passive: true });
 
-// Scroll reveal
+// ── HAMBURGER MENU ──
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+
+function openMobileMenu() {
+  mobileMenu.classList.add('open');
+  mobileMenu.setAttribute('aria-hidden', 'false');
+  hamburger.setAttribute('aria-expanded', 'true');
+  hamburger.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeMobileMenu() {
+  mobileMenu.classList.remove('open');
+  mobileMenu.setAttribute('aria-hidden', 'true');
+  hamburger.setAttribute('aria-expanded', 'false');
+  hamburger.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+hamburger.addEventListener('click', () => {
+  if (mobileMenu.classList.contains('open')) {
+    closeMobileMenu();
+  } else {
+    openMobileMenu();
+  }
+});
+
+// Close on backdrop click
+mobileMenu.addEventListener('click', (e) => {
+  if (e.target === mobileMenu) closeMobileMenu();
+});
+
+// Close on Escape
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && mobileMenu.classList.contains('open')) closeMobileMenu();
+});
+
+// ── SCROLL REVEAL ──
 const revealObserver = new IntersectionObserver((entries) => {
   entries.forEach(e => {
     if (e.isIntersecting) {
@@ -15,13 +53,13 @@ const revealObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-// FAQ accordion
+// ── FAQ ACCORDION ──
 function toggleFaq(btn) {
-  const item = btn.parentElement;
+  const item = btn.closest('.faq-item');
   const isOpen = item.classList.contains('open');
-  document.querySelectorAll('.faq-item.open').forEach(el => {
-    el.classList.remove('open');
-    el.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+  document.querySelectorAll('.faq-item.open').forEach(i => {
+    i.classList.remove('open');
+    i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
   });
   if (!isOpen) {
     item.classList.add('open');
@@ -29,31 +67,27 @@ function toggleFaq(btn) {
   }
 }
 
-// Keyboard FAQ
+// ── KEYBOARD FAQ SUPPORT ──
 document.querySelectorAll('.faq-q').forEach(btn => {
   btn.addEventListener('keydown', e => {
-    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleFaq(btn); }
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      toggleFaq(btn);
+    }
   });
 });
 
-//// Smooth scroll for nav links
-//document.querySelectorAll('a[href^="#"]').forEach(a => {
-//  a.addEventListener('click', e => {
-//    const target = document.querySelector(a.getAttribute('href'));
-//    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
-//  });
-//});
-
-
+// ── SMOOTH SCROLL FOR NAV LINKS ──
 const links = document.querySelectorAll('.animate-link');
-
 links.forEach(link => {
-link.addEventListener('click', e => {
-  e.preventDefault();
-  const target = document.querySelector(link.getAttribute('href'));
-  target.scrollIntoView({ behavior: 'smooth' });
-  target.style.transition = 'opacity 0.8s ease';
-  target.style.opacity = 0;
-  setTimeout(() => target.style.opacity = 1, 200);
-});
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(link.getAttribute('href'));
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+      target.style.transition = 'opacity 0.8s ease';
+      target.style.opacity = 0;
+      setTimeout(() => target.style.opacity = 1, 200);
+    }
+  });
 });
