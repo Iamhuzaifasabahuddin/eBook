@@ -1,13 +1,13 @@
 :root {
-  --ink: #0D0D0D;
-  --paper: #F5F0E8;
-  --cream: #EDE8DC;
-  --gold: #C8963E;
-  --gold-light: #E8B85A;
-  --rust: #B84A2E;
-  --sage: #4A6741;
-  --muted: #6B6560;
-  --border: rgba(13,13,13,0.12);
+  --ink: #1C2B2B;
+  --paper: #F7F5F0;
+  --cream: #EAE8E2;
+  --gold: #3D7A6A;
+  --gold-light: #E8894A;
+  --rust: #A8C5BC;
+  --sage: #2D5C4E;
+  --muted: #5C6E6E;
+  --border: rgba(28,43,43,0.12);
   --serif: 'Playfair Display', Georgia, serif;
   --sans: 'DM Sans', sans-serif;
 }
