@@ -1,33 +1,159 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-   <url>
-        <loc>https://australisinkpublisher.com/</loc>
-        <lastmod>2026-04-30</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://australisinkpublisher.com/about</loc>
-        <lastmod>2026-04-30</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://australisinkpublisher.com/services</loc>
-        <lastmod>2026-04-30</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://australisinkpublisher.com/contact</loc>
-        <lastmod>2026-04-30</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://australisinkpublisher.com/blog</loc>
-        <lastmod>2026-04-30</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ═══════════════════════════════════════════
+    HOME PAGE
+  ═══════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.australisinkpublisher.com/</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en-AU" href="https://www.australisinkpublisher.com/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.australisinkpublisher.com/"/>
+  </url>
+
+  <!-- ═══════════════════════════════════════════
+    ON-PAGE ANCHOR SECTIONS
+    (included as distinct crawl targets / deep-link destinations)
+  ═══════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.australisinkpublisher.com/#services</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.australisinkpublisher.com/#process</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.australisinkpublisher.com/#platforms</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.australisinkpublisher.com/#pricing</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.australisinkpublisher.com/#faq</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ═══════════════════════════════════════════
+    FOOTER PAGES — Company
+  ═══════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.australisinkpublisher.com/about</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.australisinkpublisher.com/editors</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://www.australisinkpublisher.com/case-studies</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://www.australisinkpublisher.com/blog</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.australisinkpublisher.com/careers</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- ═══════════════════════════════════════════
+    FOOTER PAGES — Support
+  ═══════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.australisinkpublisher.com/contact</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.australisinkpublisher.com/submit-manuscript</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.australisinkpublisher.com/author-portal</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://www.australisinkpublisher.com/affiliate</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- ═══════════════════════════════════════════
+    LEGAL
+  ═══════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.australisinkpublisher.com/privacy-policy</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.australisinkpublisher.com/terms-of-service</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <url>
+    <loc>https://www.australisinkpublisher.com/cookie-policy</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <!-- ═══════════════════════════════════════════
+    SEARCH (SearchAction declared in schema)
+  ═══════════════════════════════════════════ -->
+  <url>
+    <loc>https://www.australisinkpublisher.com/search</loc>
+    <lastmod>2026-04-30</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.3</priority>
+  </url>
+
 </urlset>
