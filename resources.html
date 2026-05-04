@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Self-Publishing Guides &amp; Resources | Australis Ink Publisher</title>
+  <meta name="description" content="Free self-publishing guides, checklists, and resources. Learn how to format an eBook, optimize keywords, price your book, and more. Download templates &amp; tools.">
+  <meta name="keywords" content="self-publishing guide, eBook formatting guide, book publishing resources, author tools, self-publishing checklist">
+  <link rel="canonical" href="https://www.australisinkpublisher.com/resources/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/style.css">
+  <style>
+    .resources-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      margin: 3rem 0;
+    }
+    .resource-card {
+      background: var(--paper);
+      padding: 2rem;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+    .resource-card:hover {
+      background: var(--cream);
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    }
+    .resource-icon {
+      width: 48px;
+      height: 48px;
+      background: var(--cream);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+      font-size: 24px;
+    }
+    .resource-card h3 {
+      font-family: var(--serif);
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: var(--ink);
+    }
+    .resource-card p {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    .resource-meta {
+      font-size: 12px;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .resource-meta span:first-child::after {
+      content: '•';
+      margin-left: 8px;
+    }
+    .resource-category {
+      display: inline-block;
+      padding: 4px 10px;
+      background: var(--gold);
+      color: var(--ink);
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 2rem;
+    }
+    @media (max-width: 900px) {
+      .resources-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .resources-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Self-Publishing Resources &amp; Guides",
+    "description": "Free guides, checklists, and tools for self-publishing authors",
+    "url": "https://www.australisinkpublisher.com/resources/"
+  }
+  </script>
+</head>
+<body>
+
+<nav id="main-nav" aria-label="Main navigation">
+  <div class="nav-logo">AustralisInk<span> Publisher</span></div>
+   <ul class="nav-links" id="nav-links" role="menubar">
+     <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+     <li role="none"><a href="services-hub.html" role="menuitem">Services</a></li>
+     <li role="none"><a href="resources.html" role="menuitem">Resources</a></li>
+     <li role="none"><a href="blog-post-template.html" role="menuitem">Blog</a></li>
+
+   </ul>
+   <button class="nav-cta desktop-cta">Get a quote</button>
+   <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+     <span class="ham-bar"></span><span class="ham-bar"></span><span class="ham-bar"></span>
+   </button>
+ </nav>
+
+ <!-- MOBILE MENU OVERLAY -->
+ <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+   <div class="mobile-menu-inner">
+     <ul class="mobile-nav-links">
+       <li><a href="index.html" onclick="closeMobileMenu()">Home</a></li>
+       <li><a href="services-hub.html" onclick="closeMobileMenu()">Services</a></li>
+       <li><a href="resources.html" onclick="closeMobileMenu()">Resources</a></li>
+       <li><a href="#pricing" onclick="closeMobileMenu()">Pricing</a></li>
+     </ul>
+     <button class="mobile-cta" onclick="closeMobileMenu(); document.getElementById('cta-section').scrollIntoView({behavior:'smooth'})">Get a free quote</button>
+   </div>
+ </div>
+
+<main style="padding-top: 68px;">
+
+<!-- HERO -->
+<section style="background: var(--cream); padding: 80px 5% 60px;">
+  <div class="reveal visible" style="max-width: 720px;">
+    <div class="section-tag" style="margin-bottom: 1.5rem;">
+      <span></span>Free guides &amp; tools
+    </div>
+    <h1 class="section-heading" style="font-size: clamp(36px, 4.5vw, 52px); margin-bottom: 1.5rem;">
+      Learn self-publishing<br><em>the right way</em>
+    </h1>
+    <p style="font-size: 16px; color: var(--muted); max-width: 520px; line-height: 1.75;">
+      Everything you need to know about formatting, keywords, pricing, and launching your book. Free guides, downloadable checklists, and proven strategies from 2,400+ published authors.
+    </p>
+  </div>
+</section>
+
+<!-- HOW-TO GUIDES -->
+<section style="padding: 60px 5%;">
+  <div class="resource-category">How-to guides</div>
+  <h2 class="section-heading" style="margin-bottom: 1rem;">Step-by-step publishing guides</h2>
+  <p style="font-size: 15px; color: var(--muted); margin-bottom: 2rem; line-height: 1.75;">
+    Comprehensive guides that walk you through each stage of self-publishing, from formatting to marketing launch.
+  </p>
+  
+  <div class="resources-grid">
+    <!-- Guide 1 -->
+    <div class="resource-card">
+      <div class="resource-icon">📋</div>
+      <h3>Self-Publishing Checklist</h3>
+      <p>A complete checklist of everything you need to do before hitting publish. Download the PDF version to track your progress.</p>
+      <div class="resource-meta">
+        <span>Checklist</span>
+        <span>Free download</span>
+      </div>
+    </div>
+    
+    <!-- Guide 2 -->
+    <div class="resource-card">
+      <div class="resource-icon">📐</div>
+      <h3>eBook Formatting Guide</h3>
+      <p>Master EPUB, MOBI, and PDF formatting. Learn the technical requirements for every platform, plus common mistakes to avoid.</p>
+      <div class="resource-meta">
+        <span>Guide</span>
+        <span>10 min read</span>
+      </div>
+    </div>
+    
+    <!-- Guide 3 -->
+    <div class="resource-card">
+      <div class="resource-icon">💰</div>
+      <h3>Self-Publishing Costs Breakdown</h3>
+      <p>How much does it really cost to self-publish? Detailed cost breakdown for DIY vs. professional services.</p>
+      <div class="resource-meta">
+        <span>Guide</span>
+        <span>8 min read</span>
+      </div>
+    </div>
+    
+    <!-- Guide 4 -->
+    <div class="resource-card">
+      <div class="resource-icon">🎯</div>
+      <h3>Amazon KDP Publishing Guide</h3>
+      <p>Complete step-by-step guide to publishing on Amazon KDP. Category strategy, pricing, and A9 algorithm basics.</p>
+      <div class="resource-meta">
+        <span>Guide</span>
+        <span>15 min read</span>
+      </div>
+    </div>
+    
+    <!-- Guide 5 -->
+    <div class="resource-card">
+      <div class="resource-icon">📝</div>
+      <h3>How to Write a Book Blurb</h3>
+      <p>Learn the psychology of effective book descriptions. Templates, examples, and formulas that convert browsers into buyers.</p>
+      <div class="resource-meta">
+        <span>Guide</span>
+        <span>12 min read</span>
+      </div>
+    </div>
+    
+    <!-- Guide 6 -->
+    <div class="resource-card">
+      <div class="resource-icon">🏷️</div>
+      <h3>Book Keywords &amp; SEO</h3>
+      <p>Master keyword research for eBook discovery. Find high-ranking keywords, optimize your metadata, and increase visibility.</p>
+      <div class="resource-meta">
+        <span>Guide</span>
+        <span>14 min read</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOADS -->
+<section style="padding: 60px 5%; background: var(--cream);">
+  <div class="resource-category">Downloadable templates</div>
+  <h2 class="section-heading" style="margin-bottom: 1rem;">Free templates &amp; worksheets</h2>
+  <p style="font-size: 15px; color: var(--muted); margin-bottom: 2rem; line-height: 1.75;">
+    Copy these templates and adapt them to your book. Save time and avoid common formatting mistakes.
+  </p>
+  
+  <div class="resources-grid">
+    <!-- Download 1 -->
+    <div class="resource-card">
+      <div class="resource-icon">📄</div>
+      <h3>Manuscript Template (DOCX)</h3>
+      <p>Pre-formatted Word template with all the styles you need for proper eBook formatting. Download and start writing.</p>
+      <div class="resource-meta">
+        <span>Template</span>
+        <span>Free</span>
+      </div>
+    </div>
+    
+    <!-- Download 2 -->
+    <div class="resource-card">
+      <div class="resource-icon">🎨</div>
+      <h3>Cover Design Brief</h3>
+      <p>Worksheet to clarify your design vision before working with a designer. Includes mood board prompts and genre analysis.</p>
+      <div class="resource-meta">
+        <span>Worksheet</span>
+        <span>PDF</span>
+      </div>
+    </div>
+    
+    <!-- Download 3 -->
+    <div class="resource-card">
+      <div class="resource-icon">✏️</div>
+      <h3>Manuscript Editing Checklist</h3>
+      <p>Self-editing checklist to catch common errors before sending to a professional editor. Covers plot, characters, style &amp; grammar.</p>
+      <div class="resource-meta">
+        <span>Checklist</span>
+        <span>Free download</span>
+      </div>
+    </div>
+    
+    <!-- Download 4 -->
+    <div class="resource-card">
+      <div class="resource-icon">📊</div>
+      <h3>Launch Planning Template</h3>
+      <p>30-day pre-launch and launch-day checklist. Track marketing tasks, ARC readers, social posts, and key milestones.</p>
+      <div class="resource-meta">
+        <span>Timeline</span>
+        <span>Excel/Google Sheets</span>
+      </div>
+    </div>
+    
+    <!-- Download 5 -->
+    <div class="resource-card">
+      <div class="resource-icon">💡</div>
+      <h3>Keywords Spreadsheet</h3>
+      <p>Template for researching and organizing your book's keywords. Includes search volume, competition analysis, and category mapping.</p>
+      <div class="resource-meta">
+        <span>Spreadsheet</span>
+        <span>Google Sheets</span>
+      </div>
+    </div>
+    
+    <!-- Download 6 -->
+    <div class="resource-card">
+      <div class="resource-icon">📈</div>
+      <h3>Sales Tracking Sheet</h3>
+      <p>Monitor your book's performance across platforms. Track sales, price changes, ranking trends, and royalties in one place.</p>
+      <div class="resource-meta">
+        <span>Tracker</span>
+        <span>Excel</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GENRE GUIDES -->
+<section style="padding: 60px 5%;">
+  <div class="resource-category">Genre guides</div>
+  <h2 class="section-heading" style="margin-bottom: 1rem;">Guides tailored to your genre</h2>
+  <p style="font-size: 15px; color: var(--muted); margin-bottom: 2rem; line-height: 1.75;">
+    Genre-specific advice for cover design, keywords, pricing, and marketing strategies.
+  </p>
+  
+  <div class="resources-grid">
+    <!-- Genre 1 -->
+    <div class="resource-card">
+      <div class="resource-icon">📖</div>
+      <h3>Self-Publish Fiction</h3>
+      <p>Tailored advice for fiction authors. Cover design expectations, reader psychology, pricing strategies for your category.</p>
+      <div class="resource-meta">
+        <span>Guide</span>
+        <span>12 min read</span>
+      </div>
+    </div>
+    
+    <!-- Genre 2 -->
+    <div class="resource-card">
+      <div class="resource-icon">💼</div>
+      <h3>Self-Publish Non-Fiction</h3>
+      <p>Authority building for business, memoir, and self-help. Keywords, positioning, and launch strategies for non-fiction.</p>
+      <div class="resource-meta">
+        <span>Guide</span>
+        <span>10 min read</span>
+      </div>
+    </div>
+    
+    <!-- Genre 3 -->
+    <div class="resource-card">
+      <div class="resource-icon">🎨</div>
+      <h3>Publish a Children's Book</h3>
+      <p>Special considerations for illustrated children's books. Formatting requirements, age-targeting, and parent/teacher marketing.</p>
+      <div class="resource-meta">
+        <span>Guide</span>
+        <span>11 min read</span>
+      </div>
+    </div>
+    
+    <!-- Genre 4 -->
+    <div class="resource-card">
+      <div class="resource-icon">💚</div>
+      <h3>Publish a Romance Novel</h3>
+      <p>Romance market trends, cover design psychology, pricing strategies, and reader expectations by subgenre.</p>
+      <div class="resource-meta">
+        <span>Guide</span>
+        <span>13 min read</span>
+      </div>
+    </div>
+    
+    <!-- Genre 5 -->
+    <div class="resource-card">
+      <div class="resource-icon">🌍</div>
+      <h3>Publish a Memoir</h3>
+      <p>Advice for memoir and biography authors. Narrative structure, emotional impact, and how to reach your readers.</p>
+      <div class="resource-meta">
+        <span>Guide</span>
+        <span>9 min read</span>
+      </div>
+    </div>
+    
+    <!-- Genre 6 -->
+    <div class="resource-card">
+      <div class="resource-icon">✨</div>
+      <h3>Publish a Cookbook</h3>
+      <p>Formatting recipes, photography tips, indexing, and positioning your cookbook for maximum discoverability.</p>
+      <div class="resource-meta">
+        <span>Guide</span>
+        <span>10 min read</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON TOOLS -->
+<section style="padding: 60px 5%; background: var(--cream);">
+  <div class="resource-category">Tools &amp; comparisons</div>
+  <h2 class="section-heading" style="margin-bottom: 1rem;">Interactive tools &amp; comparisons</h2>
+  <p style="font-size: 15px; color: var(--muted); margin-bottom: 2rem; line-height: 1.75;">
+    Make informed decisions with these interactive tools and detailed comparison guides.
+  </p>
+  
+  <div class="resources-grid">
+    <!-- Tool 1 -->
+    <div class="resource-card">
+      <div class="resource-icon">📊</div>
+      <h3>Publishing Platforms Compared</h3>
+      <p>Side-by-side comparison of Amazon KDP, Apple Books, Kobo, and 15+ other platforms. Fees, royalties, and reach.</p>
+      <div class="resource-meta">
+        <span>Comparison</span>
+        <span>Interactive</span>
+      </div>
+    </div>
+    
+    <!-- Tool 2 -->
+    <div class="resource-card">
+      <div class="resource-icon">💸</div>
+      <h3>eBook Pricing Calculator</h3>
+      <p>Find the optimal price for your eBook. See royalty projections at different price points across all platforms.</p>
+      <div class="resource-meta">
+        <span>Tool</span>
+        <span>Interactive</span>
+      </div>
+    </div>
+    
+    <!-- Tool 3 -->
+    <div class="resource-card">
+      <div class="resource-icon">🎯</div>
+      <h3>KDP vs. Wide Distribution</h3>
+      <p>Compare Kindle Unlimited (exclusive) vs. wide distribution (multi-platform). Pros, cons, and decision framework.</p>
+      <div class="resource-meta">
+        <span>Guide</span>
+        <span>6 min read</span>
+      </div>
+    </div>
+    
+    <!-- Tool 4 -->
+    <div class="resource-card">
+      <div class="resource-icon">📈</div>
+      <h3>Self-Publishing ROI Calculator</h3>
+      <p>Model your potential earnings based on book price, genre, and marketing spend. Realistic break-even projections.</p>
+      <div class="resource-meta">
+        <span>Calculator</span>
+        <span>Interactive</span>
+      </div>
+    </div>
+    
+    <!-- Tool 5 -->
+    <div class="resource-card">
+      <div class="resource-icon">🛠️</div>
+      <h3>DIY vs. Professional Services</h3>
+      <p>Detailed comparison of costs, time investment, and quality outcomes when self-publishing DIY vs. using professional services.</p>
+      <div class="resource-meta">
+        <span>Comparison</span>
+        <span>Detailed analysis</span>
+      </div>
+    </div>
+    
+    <!-- Tool 6 -->
+    <div class="resource-card">
+      <div class="resource-icon">🎬</div>
+      <h3>Launch Timeline Calculator</h3>
+      <p>Estimate how long your publishing project will take. Account for editing, formatting, design, and marketing prep.</p>
+      <div class="resource-meta">
+        <span>Tool</span>
+        <span>Interactive</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" style="padding: 100px 5%; margin-top: 60px;">
+  <div class="cta-bg"></div>
+  <div style="position:relative;z-index:2;">
+    <h2 class="section-heading" style="text-align:center; margin-bottom: 1rem;">Still have questions?</h2>
+    <p class="cta-desc">Submit your manuscript for a free assessment. Our team will evaluate your project and recommend the right services and timeline for your goals.</p>
+    <div class="cta-actions">
+      <button class="btn-gold">Get a free assessment</button>
+      <button class="btn-outline" style="color:var(--paper);border-color:rgba(245,240,232,0.25);">Email us a question</button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="nav-logo">AustralisInk<span style="color:var(--gold)"> Publisher</span></span>
+      <p class="footer-tagline">Professional eBook publishing, editing, and formatting services for independent authors.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="services-hub.html">All services</a>
+      <a href="services/manuscript-editing.html">Manuscript editing</a>
+      <a href="#">eBook formatting</a>
+      <a href="#">Cover design</a>
+    </div>
+    <div class="footer-col">
+      <h4>Learn</h4>
+      <a href="resources.html">All resources</a>
+      <a href="#">Blog</a>
+      <a href="#">Case studies</a>
+      <a href="#">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Careers</a>
+      <a href="#">Affiliates</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 202 6Australis Ink Publisher. All rights reserved.</span>
+    <div class="footer-legal">
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Cookies</a>
+    </div>
+  </div>
+</footer>
+
+<script src="static/script.js"></script>
+</body>
+</html>

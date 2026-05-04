@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Manuscript Editing Service | Australis Ink Publisher</title>
+  <meta name="description" content="Expert manuscript editing service: developmental, line, and copy editing. 2,400+ authors edited. Preserve your voice, elevate your manuscript. Get a free sample edit.">
+  <meta name="keywords" content="manuscript editing service, professional book editing, developmental editing, copy editing service, self-editing help, manuscript feedback">
+  <link rel="canonical" href="https://www.australisinkpublisher.com/services/manuscript-editing/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="static/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Manuscript Editing",
+    "description": "Professional manuscript editing including developmental, line, and copy editing services for authors.",
+    "provider": {
+      "@type": "Organization",
+      "name": "Australis Ink Publisher",
+      "url": "https://www.australisinkpublisher.com"
+    },
+    "areaServed": "AU",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Manuscript Editing Packages",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "name": "Manuscript Editing",
+          "price": "299-799",
+          "priceCurrency": "AUD",
+          "availability": "https://schema.org/InStock"
+        }
+      ]
+    }
+  }
+  </script>
+  <style>
+    .service-hero { background: var(--ink); color: var(--paper); padding: 80px 5% 60px; }
+    .service-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 3rem; margin-top: 4rem; }
+    .service-content { max-width: 720px; }
+    .service-sidebar { background: var(--cream); padding: 2rem; border-radius: 8px; height: fit-content; position: sticky; top: 100px; }
+    .editing-types { display: grid; grid-template-columns: 1fr; gap: 2rem; margin: 3rem 0; }
+    .editing-card { background: var(--cream); padding: 2rem; border-left: 4px solid var(--gold); }
+    .editing-card h3 { margin-bottom: 0.75rem; font-size: 18px; }
+    .editing-card p { font-size: 14px; color: var(--muted); line-height: 1.7; }
+    .before-after { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 3rem 0; background: var(--cream); padding: 2rem; }
+    .before-after-item { }
+    .before-after-label { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 0.75rem; }
+    .before-after-text { font-size: 14px; line-height: 1.8; color: var(--ink); font-family: 'Courier New', monospace; background: var(--paper); padding: 1rem; border-radius: 4px; min-height: 160px; overflow-y: auto; }
+    .process-timeline { display: flex; flex-direction: column; gap: 0; margin: 3rem 0; }
+    .timeline-step { display: flex; gap: 2rem; padding: 2rem 0; border-bottom: 1px solid var(--border); }
+    .timeline-step:last-child { border-bottom: none; }
+    .timeline-dot { width: 32px; height: 32px; background: var(--gold); border-radius: 50%; flex-shrink: 0; display: flex; align-items: center; justify-content: center; color: var(--ink); font-size: 14px; font-weight: 600; }
+    .sidebar-price { font-size: 32px; font-weight: 900; font-family: var(--serif); color: var(--ink); margin-bottom: 0.5rem; }
+    .sidebar-from { font-size: 12px; color: var(--muted); margin-bottom: 1.5rem; }
+    .sidebar-cta { width: 100%; padding: 14px; background: var(--gold); color: var(--ink); border: none; font-weight: 500; cursor: pointer; transition: background 0.2s; }
+    .sidebar-cta:hover { background: var(--gold-light); }
+    .faq-editing { margin: 3rem 0; }
+    .faq-editing .faq-item { border-bottom: 1px solid var(--border); }
+    @media (max-width: 900px) {
+      .service-grid { grid-template-columns: 1fr; }
+      .service-sidebar { position: static; }
+      .before-after { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav id="main-nav" aria-label="Main navigation">
+  <div class="nav-logo">AustralisInk<span> Publisher</span></div>
+   <ul class="nav-links" id="nav-links" role="menubar">
+     <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+     <li role="none"><a href="services-hub.html" role="menuitem">Services</a></li>
+     <li role="none"><a href="resources.html" role="menuitem">Resources</a></li>
+     <li role="none"><a href="blog-post-template.html" role="menuitem">Blog</a></li>
+   </ul>
+   <button class="nav-cta desktop-cta">Get a quote</button>
+   <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+     <span class="ham-bar"></span><span class="ham-bar"></span><span class="ham-bar"></span>
+   </button>
+ </nav>
+
+ <!-- MOBILE MENU OVERLAY -->
+ <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+   <div class="mobile-menu-inner">
+     <ul class="mobile-nav-links">
+       <li><a href="index.html" onclick="closeMobileMenu()">Home</a></li>
+       <li><a href="services-hub.html" onclick="closeMobileMenu()">Services</a></li>
+       <li><a href="resources.html" onclick="closeMobileMenu()">Resources</a></li>
+       <li><a href="#pricing" onclick="closeMobileMenu()">Pricing</a></li>
+     </ul>
+     <button class="mobile-cta" onclick="closeMobileMenu(); document.getElementById('cta-section').scrollIntoView({behavior:'smooth'})">Get a free quote</button>
+   </div>
+ </div>
+
+<main style="padding-top: 68px;">
+
+<!-- SERVICE HERO -->
+<section class="service-hero" aria-labelledby="service-heading">
+  <div class="reveal visible" style="max-width: 720px;">
+    <div class="section-tag" style="color: var(--gold-light); margin-bottom: 1.5rem;">
+      <span style="background: var(--gold-light);"></span>Service detail
+    </div>
+    <h1 id="service-heading" class="section-heading" style="color: var(--paper); font-size: clamp(36px, 4.5vw, 52px); margin-bottom: 1.5rem;">
+      Manuscript<br><em style="color: var(--gold-light);">Editing</em>
+    </h1>
+    <p style="font-size: 16px; color: rgba(245,240,232,0.65); max-width: 520px; line-height: 1.75;">
+      Transformative feedback from experienced editors who understand your genre, respect your voice, and help you reach your best readers. Developmental, line, and copy editing tailored to your manuscript's needs.
+    </p>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<section style="background: var(--paper); padding: 60px 5%;">
+  <div class="service-grid">
+    
+    <!-- LEFT COLUMN: Content -->
+    <div class="service-content">
+      
+      <!-- Types of Editing -->
+      <h2 style="font-family: var(--serif); font-size: 32px; font-weight: 700; margin-bottom: 1rem;">Three levels of editing expertise</h2>
+      <p style="font-size: 15px; color: var(--muted); margin-bottom: 2rem; line-height: 1.75;">
+        Every manuscript is different. Depending on your draft's stage and your goals, we recommend one or more of these editing approaches:
+      </p>
+      
+      <div class="editing-types">
+        <div class="editing-card">
+          <h3>Developmental Editing</h3>
+          <p>
+            For manuscripts in draft or revision stage. We assess structure, pacing, character development, plot coherence, and thematic strength. You'll receive a detailed editorial letter with big-picture recommendations, plus scene-by-scene notes.
+          </p>
+          <p style="margin-top: 0.5rem; font-size: 12px; color: var(--gold);"><strong>Best for:</strong> Early drafts, first-time authors, significant rewrites</p>
+        </div>
+        
+        <div class="editing-card">
+          <h3>Line Editing</h3>
+          <p>
+            Once structure is solid, we refine prose at the sentence level. This includes flow, rhythm, word choice, style consistency, and emotional resonance. Every line is scrutinized for clarity, impact, and your unique voice.
+          </p>
+          <p style="margin-top: 0.5rem; font-size: 12px; color: var(--gold);"><strong>Best for:</strong> Polishing drafts, strengthening voice, improving readability</p>
+        </div>
+        
+        <div class="editing-card">
+          <h3>Copy Editing &amp; Proofreading</h3>
+          <p>
+            The final pass. We catch grammar, punctuation, spelling, consistency issues, and formatting errors. Essential before submission to retailers. Delivered with tracked changes so you can review every suggestion.
+          </p>
+          <p style="margin-top: 0.5rem; font-size: 12px; color: var(--gold);"><strong>Best for:</strong> Final manuscripts, pre-publication polish, error elimination</p>
+        </div>
+      </div>
+      
+      <!-- Before & After -->
+      <h2 style="font-family: var(--serif); font-size: 28px; font-weight: 700; margin: 3rem 0 1rem;">See the difference</h2>
+      <p style="font-size: 15px; color: var(--muted); margin-bottom: 1.5rem;">Here's a real example of how our editing transforms a passage:</p>
+      
+      <div class="before-after">
+        <div class="before-after-item">
+          <div class="before-after-label">Before editing</div>
+          <div class="before-after-text">She walked into the room. It was dark. She felt scared. Her heart was beating very fast. She didn't know what was there. It was very quiet.</div>
+        </div>
+        <div class="before-after-item">
+          <div class="before-after-label">After line editing</div>
+          <div class="before-after-text">She stepped into the darkened room, her pulse quickening. Silence pressed against her ears. Somewhere in the black, something waited—she could feel its presence like a held breath.</div>
+        </div>
+      </div>
+      
+      <!-- Process -->
+      <h2 style="font-family: var(--serif); font-size: 28px; font-weight: 700; margin: 3rem 0 1rem;">Our editing process</h2>
+      <div class="process-timeline">
+        <div class="timeline-step">
+          <div class="timeline-dot">1</div>
+          <div>
+            <h3 style="font-weight: 600; margin-bottom: 0.25rem;">Manuscript assessment</h3>
+            <p style="font-size: 14px; color: var(--muted); line-height: 1.6;">You submit your manuscript (any format). We read it in full, assessing scope, genre, and editing needs. Within 2 business days, we provide a free assessment of which editing level(s) we recommend.</p>
+          </div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-dot">2</div>
+          <div>
+            <h3 style="font-weight: 600; margin-bottom: 0.25rem;">Edit &amp; feedback</h3>
+            <p style="font-size: 14px; color: var(--muted); line-height: 1.6;">Your assigned editor works through your manuscript using track changes, comments, and a detailed editorial letter or style report. Turnaround is typically 2–3 weeks depending on length.</p>
+          </div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-dot">3</div>
+          <div>
+            <h3 style="font-weight: 600; margin-bottom: 0.25rem;">Revisions &amp; approval</h3>
+            <p style="font-size: 14px; color: var(--muted); line-height: 1.6;">You review changes, accept/reject suggestions, and incorporate feedback. Our Professional package includes one full revision round. Starter includes consultation on major revisions.</p>
+          </div>
+        </div>
+        <div class="timeline-step">
+          <div class="timeline-dot">4</div>
+          <div>
+            <h3 style="font-weight: 600; margin-bottom: 0.25rem;">Final polish</h3>
+            <p style="font-size: 14px; color: var(--muted); line-height: 1.6;">Your manuscript is publication-ready. Editors are available for follow-up questions. Your book is now polished, confident, and ready for the next step: formatting or cover design.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Genre Specialties -->
+      <h2 style="font-family: var(--serif); font-size: 28px; font-weight: 700; margin: 3rem 0 1rem;">Editors for every genre</h2>
+      <p style="font-size: 15px; color: var(--muted); margin-bottom: 2rem; line-height: 1.75;">
+        Our editing team includes specialists across fiction and non-fiction categories. When you submit, we match you with an editor experienced in your genre—whether that's psychological thriller, contemporary romance, business memoir, self-help, cookbooks, or more.
+      </p>
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; background: var(--cream); padding: 1.5rem;">
+        <div><strong style="color: var(--ink);">Fiction:</strong> Literary, thriller, romance, sci-fi, fantasy, historical, mystery</div>
+        <div><strong style="color: var(--ink);">Non-fiction:</strong> Memoir, self-help, business, biography, history, essays, academic</div>
+      </div>
+      
+      <!-- FAQ for Editing Service -->
+      <h2 style="font-family: var(--serif); font-size: 28px; font-weight: 700; margin: 3rem 0 1rem;">Common questions</h2>
+      <div class="faq-editing">
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaqItem(this)">
+            <span>How long does manuscript editing take?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">Typically 2–4 weeks depending on manuscript length, editing depth, and our current schedule. We offer 48-hour priority editing for an additional fee if you're on a tight deadline.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaqItem(this)">
+            <span>Will an editor change my voice?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">No. A core principle of our editing is preserving the author's unique voice. We strengthen prose, improve clarity, and eliminate errors—but the manuscript remains unmistakably yours.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaqItem(this)">
+            <span>What file formats do you accept?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">We accept .docx (Word), .pages, .rtf, .odt, and Google Docs links. Most authors submit Word format, which works best with our track-changes workflow.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaqItem(this)">
+            <span>Do you offer a free sample edit?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">Yes. Submit your first 2,500 words and we'll provide a detailed sample edit showing exactly what you can expect. No obligation. Most authors use this to decide if our style is the right fit.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q" onclick="toggleFaqItem(this)">
+            <span>What if I'm not happy with the edits?</span>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-a">All packages include at least one revision round. Our Professional package includes unlimited revisions until you're satisfied. In the unlikely event you're unhappy, we offer a full refund—no questions asked.</div>
+        </div>
+      </div>
+      
+    </div>
+    
+    <!-- RIGHT COLUMN: Sidebar -->
+    <div>
+      <div class="service-sidebar">
+        <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); margin-bottom: 0.5rem;">Starting at</div>
+        <div class="sidebar-price">$299</div>
+        <div class="sidebar-from">one-time investment</div>
+        
+        <p style="font-size: 14px; color: var(--muted); line-height: 1.6; margin-bottom: 1.5rem;">
+          Copy editing for manuscripts up to 50k words. Full developmental &amp; line editing packages available.
+        </p>
+        
+        <button class="sidebar-cta">Get a free sample edit</button>
+        
+        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border);">
+          <h4 style="font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1rem; color: var(--ink);">What's included</h4>
+          <ul style="list-style: none; font-size: 13px; line-height: 1.8; color: var(--muted);">
+            <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 8px;">
+              <span style="color: var(--gold); flex-shrink: 0;">✓</span>
+              <span>Expert editor from your genre</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 8px;">
+              <span style="color: var(--gold); flex-shrink: 0;">✓</span>
+              <span>Track changes &amp; detailed feedback</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 8px;">
+              <span style="color: var(--gold); flex-shrink: 0;">✓</span>
+              <span>Style report or editorial letter</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 8px; margin-bottom: 8px;">
+              <span style="color: var(--gold); flex-shrink: 0;">✓</span>
+              <span>1 revision round</span>
+            </li>
+            <li style="display: flex; align-items: flex-start; gap: 8px;">
+              <span style="color: var(--gold); flex-shrink: 0;">✓</span>
+              <span>Free manuscript assessment</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div style="margin-top: 2rem; padding: 1rem; background: var(--border); border-radius: 4px; font-size: 12px; color: var(--muted); line-height: 1.6;">
+          <strong style="display: block; margin-bottom: 0.5rem; color: var(--ink);">Quick fact:</strong>
+          Our editing clients' books reach an average 4.8★ rating on Amazon — 0.4 stars higher than the platform average.
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<section class="cta-section" style="padding: 100px 5%;">
+  <div class="cta-bg"></div>
+  <div style="position:relative;z-index:2;">
+    <h2 class="section-heading" style="text-align:center; margin-bottom: 1rem;">Ready to transform<br><em>your manuscript?</em></h2>
+    <p class="cta-desc" style="max-width: 500px;">Submit your first 2,500 words for a free sample edit. See exactly how our editing works, then decide.</p>
+    <div class="cta-actions">
+      <button class="btn-gold">Submit for free sample edit</button>
+      <button class="btn-outline" style="color:var(--paper);border-color:rgba(245,240,232,0.25);">View all services</button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <span class="nav-logo">AustralisInk<span style="color:var(--gold)"> Publisher</span></span>
+      <p class="footer-tagline">Professional eBook publishing, editing, and formatting services.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <a href="manuscript-editing.html">Manuscript editing</a>
+      <a href="ebook-formatting.html">Interior formatting</a>
+      <a href="book-cover-design.html">Cover design</a>
+      <a href="ebook-distribution.html">Publishing &amp; distribution</a>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <a href="#">Editing checklist</a>
+      <a href="#">Author guides</a>
+      <a href="#">Blog</a>
+      <a href="#">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="#">Contact</a>
+      <a href="#">Submit manuscript</a>
+      <a href="#">Author portal</a>
+      <a href="#">Affiliate programme</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2026 Australis Ink Publisher. All rights reserved.</span>
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<script src="static/script.js"></script>
+<script>
+function toggleFaqItem(element) {
+  const item = element.closest('.faq-item');
+  item.classList.toggle('open');
+}
+</script>
+</body>
+</html>
