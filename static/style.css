@@ -136,6 +136,7 @@ nav.solid {
   font-family: var(--sans); font-size: 14px; font-weight: 400;
   border: 1px solid var(--border); cursor: pointer;
   transition: border-color 0.2s, transform 0.15s;
+  text-decoration: none;
 }
 .btn-outline:hover { border-color: var(--ink); transform: translateY(-2px); }
 
@@ -618,6 +619,7 @@ section { padding: 100px 5%; }
   font-family: var(--sans); font-size: 14px; font-weight: 500;
   border: none; cursor: pointer;
   transition: background 0.2s, transform 0.15s;
+  text-decoration: none;
 }
 .btn-gold:hover { background: var(--gold-light); transform: translateY(-2px); }
 
